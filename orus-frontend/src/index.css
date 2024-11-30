@@ -1,0 +1,213 @@
+/* Reseta margens e paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral do body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Fundo cinza claro */
+  color: #333; /* Texto padrão */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #004d40; /* Verde escuro */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Container principal */
+.main-container {
+  display: flex;
+  flex: 1;
+}
+
+/* Menu lateral */
+.sidebar {
+  background-color: #28a745; /* Verde */
+  color: white;
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #218838; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Conteúdo principal */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+.home-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+strong {
+  color: #2c7a7b; /* Um tom verde que complementa o tema do Orus */
+}
+
+/* Estilos específicos para a página de cadastro */
+.cadastro .form-container {
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.cadastro h1 {
+  text-align: center;
+  color: #333;
+}
+
+.cadastro .form-group {
+  margin-bottom: 15px;
+}
+
+.cadastro label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cadastro input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.cadastro button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2c7a7b;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cadastro button:hover {
+  background-color: #3c9b8f;
+}
+
+.cadastro p {
+  text-align: center;
+  color: red;
+}
+
+/* Estilos específicos para a página de listagem */
+.listagem .list-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.listagem h1 {
+  text-align: center;
+  color: #333;
+}
+
+.listagem .music-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.listagem .music-list li {
+  background-color: #f3f3f3;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.listagem .music-list li:hover {
+  background-color: #2c7a7b;
+  color: white;
+  transform: scale(1.05);
+}
+
+.listagem .music-list li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+.listagem .music-list li p {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+.listagem .no-music {
+  text-align: center;
+  color: #888;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
